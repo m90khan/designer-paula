@@ -1,7 +1,8 @@
 {
-  "name": "starter",
+  "name": "sergiox",
   "version": "1.0.0",
-  "description": "starter template webpack setup",
+  "description": "graphic designer portfolio website ",
+  "main": "webpack.config.js",
   "scripts": {
     "dev-server": "webpack-dev-server",
     "build": "webpack",
@@ -9,18 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m90khan/starterKit-webpack.git"
+    "url": "git+https://github.com/m90khan/designer-paula.git"
   },
   "keywords": [
-    "starter",
-    "template"
+    "portfolio",
+    "graphic",
+    "design",
+    "agency",
+    "freelance"
   ],
-  "author": "KhanX",
+  "author": "KhanXX",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/m90khan/starterKit-webpack/issues"
+    "url": "https://github.com/m90khan/designer-paula/issues"
   },
-  "homepage": "https://github.com/m90khan/starterKit-webpack#readme",
+  "homepage": "https://github.com/m90khan/designer-paula#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
