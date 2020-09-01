@@ -1,0 +1,90 @@
+.header {
+  font-size: 10rem;
+  -webkit-text-stroke: 0.4rem;
+  -webkit-text-fill-color: $color-black;
+  span {
+    -webkit-text-fill-color: $color-primary;
+  }
+}
+
+.heading-container {
+  width: 80%;
+  margin-right: auto;
+}
+
+.hero {
+  @include flex(row, space-evenly, center);
+  min-height: 100vh;
+  &-image {
+    flex: 0 1 40%;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    &-profile {
+      width: 90%;
+      object-fit: cover;
+    }
+  }
+
+  &-text {
+    flex: 0 1 60%;
+
+    ul {
+      text-align: right;
+    }
+  }
+}
+.hero-text-heading {
+  font-size: 5rem;
+
+  line-height: 0.95;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2rem $color-secondary;
+}
+
+.heading,
+.heading a {
+  font-size: 8rem;
+  line-height: 0.95;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4rem $color-primary;
+}
+
+.heading a {
+  text-transform: uppercase;
+}
+
+.media {
+  @include flex(column, space-between, flex-start);
+  & > * {
+    padding: 1rem 0;
+  }
+}
+.coverage {
+  h2 {
+    white-space: nowrap;
+    transform: skewY(-2deg);
+
+    a {
+      -webkit-text-fill-color: $color-tertiary;
+      -webkit-text-stroke: transparent;
+    }
+  }
+  .big-text a {
+    -webkit-text-fill-color: $color-secondary;
+    -webkit-text-stroke: transparent;
+    font-size: 12rem;
+    font-weight: 900;
+  }
+}
+
+.hero-text-primary {
+  font-size: 7rem;
+  line-height: 0.95;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4rem $color-primary;
+}

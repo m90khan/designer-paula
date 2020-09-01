@@ -1,4 +1,8 @@
 %heading {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
+%logo {
   font-family: $font-primary;
   font-weight: 400;
 }
@@ -9,7 +13,7 @@
 }
 
 h1 {
-  @extend %heading;
+  @extend %logo;
   font-size: var(--h1);
 }
 h2 {

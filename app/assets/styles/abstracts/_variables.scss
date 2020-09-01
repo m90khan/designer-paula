@@ -33,9 +33,11 @@
 }
 
 //Colors
-$color-primary: #ff8a6c;
-$color-primary-light: #ffd2c6;
-$color-primary-dark: #e76f51;
+$color-primary: #21bdb4;
+$color-primary-light: #97f8f3;
+$color-primary-dark: #1da59e;
+$color-secondary: #df385b;
+$color-tertiary: #ffbe00;
 $color-grey-light-1: #faf9f9;
 $color-grey-light-2: #f4f2f2;
 $color-grey-light-3: #f0eeee;
@@ -47,7 +49,6 @@ $color-grey-dark-3: #999;
 $color-black: #000;
 $color-white: #fff;
 // FONT VARIABLES
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100;300;400;700;900&display=swap");
-
-$font-primary: "Archivo Black", sans-serif;
-$font-secondary: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+$font-primary: "Sedgwick Ave Display", cursive;
+$font-secondary: "Work Sans", sans-serif;
