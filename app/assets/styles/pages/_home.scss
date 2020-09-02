@@ -2,43 +2,89 @@
   min-height: 15vh;
   @include flex(row, center, center);
   padding: 2rem;
+  position: relative;
 }
-
 .section-hero {
+  min-height: 80vh;
+
+  @include centerAuto;
+  @include flex(row, center, center);
+  @include respond(tab-land) {
+    @include centerAuto90;
+  }
+  @include respond(phone) {
+    min-height: 30vh;
+  }
+}
+.section-intro {
   min-height: 100vh;
   @include centerAuto;
-  @include flex(column, center, center);
-}
+  @include flex(row, center, center);
+  @include respond(tab-land) {
+    min-height: 70vh;
+    @include centerAuto90;
+  }
 
+  @include respond(tab-port) {
+    min-height: 70vh;
+  }
+  @include respond(phone) {
+    min-height: 70vh;
+  }
+}
 .section-work {
   min-height: 80vh;
   @include centerAuto;
-  @include flex(row, flex-start, flex-start);
+  @include flex(row, flex-start, center);
+  @include respond(tab-land) {
+    @include centerAuto90;
+  }
 }
 
-.secondary-heading {
-  font-size: 4rem;
-  font-weight: 600;
-}
+// .secondary-heading {
+//   font-size: 4rem;
+//   font-weight: 600;
+// }
 
 .section-media {
-  min-height: 120vh;
+  min-height: 100vh;
   @include centerAuto;
+
   @include flex(row, flex-start, flex-start);
+  @include respond(tab-land) {
+    @include centerAuto90;
+
+    min-height: 80vh;
+  }
+  @include respond(tab-port) {
+    min-height: 70vh;
+  }
 }
 
 .section-portfolio {
   min-height: 100vh;
-  @include flex(column, space-between, flex-start);
+  @include flex(column, space-evenly, flex-start);
   @include centerAuto;
+  @include respond(tab-land) {
+    @include centerAuto90;
+  }
   .projects {
     @include flex(row, space-evenly, center);
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    .hero-image {
-      flex: 1 0 35rem;
+    @include respond(phone) {
+      @include flex(column, center, center);
 
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+    .hero-image {
+      flex: 1 0 45rem;
+      @include respond(phone) {
+        flex: 0;
+      }
       img {
         width: 80%;
         border-radius: 1rem;
@@ -50,40 +96,70 @@
 .section-contact {
   @include flex(column, space-between, center);
   min-height: 100vh;
-  margin: 0 auto;
-  width: 80%;
-  h2 {
-    -webkit-text-fill-color: $color-tertiary;
-    -webkit-text-stroke: transparent;
-    font-size: 5rem;
-    font-weight: 900;
+  @include centerAuto;
+
+  @include respond(tab-land) {
+    @include centerAuto90;
+    min-height: 8vh;
+  }
+  .hero-text {
+    text-align: center;
+    width: 100%;
+    margin-top: 5rem;
+    h4 {
+      -webkit-text-fill-color: $color-secondary;
+      -webkit-text-stroke: transparent;
+      font-weight: 900;
+      @include respond(tab-port) {
+        @include centerAuto90;
+        font-size: 4.5rem;
+      }
+
+      @include respond(phone) {
+        @include centerAuto90;
+        font-size: 2.5rem;
+      }
+    }
   }
   h3 {
     -webkit-text-fill-color: $color-tertiary;
     -webkit-text-stroke: transparent;
-    font-size: 5rem;
     font-weight: 800;
   }
   .contact {
     margin: 10rem 0 0;
     @include flex(row, space-between, center);
+
     .hero-image {
       width: 100%;
       height: 100%;
-      flex: 0 1 40%;
-
+      flex: 0 0 40%;
+      @include respond(phone) {
+        flex: 0 0 35%;
+      }
       img {
         width: 100%;
         height: 100%;
       }
     }
     .paragraph {
-      flex: 0 1 57%;
+      flex: 0 0 55%;
+      text-align: left;
+      @include respond(phone) {
+        flex: 0 0 55%;
+      }
       p {
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-weight: 800;
-        line-height: 0.8;
-        width: 80%;
+        line-height: 0.9;
+        width: 70%;
+        @include respond(tab-port) {
+          width: 90%;
+        }
+
+        @include respond(phone) {
+          font-size: 3rem;
+        }
       }
     }
   }
@@ -93,9 +169,10 @@
   min-height: 30vh;
   @include centerAuto;
   @include flex(column, center, center);
-
+  @include respond(tab-land) {
+    @include centerAuto90;
+  }
   p {
-    font-size: 1.5rem;
     color: $color-white;
     padding: 2rem;
   }

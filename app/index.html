@@ -12,11 +12,20 @@
       name="description"
       content="Stressed? No Problem. You relief is One trip away. We create soul restoring journeys that inspire you to be you."
     />
-    <link rel="icon" href="./assets/images/svg/bonfire.svg" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    /> -->
+    <link rel="icon" href="./assets/images/icons/SVG/heart.svg" />
   </head>
   <body class="opening">
+    <!-- <div class="scrollContainer"> -->
     <header class="section-header">
       <h1 class="header">S<span>D</span>P</h1>
+      <!-- <div class="header__burger">
+        <div class="header__burger--line1"></div>
+        <div class="header__burger--line2"></div>
+      </div> -->
     </header>
 
     <main>
@@ -25,31 +34,46 @@
       <div class="section-hero">
         <div class="heading-container">
           <h2 class="heading">
-            HI, I AM SERGIO DE PAULA, BORN IN PORTUGAL BUT LIVES IN AUSTRALIA.
+            <div class="line">
+              <span>HI, I AM SERGIO</span>
+            </div>
+            <div class="line">
+              <span>DE MELLO, BORN</span>
+            </div>
+            <div class="line">
+              <span>IN PORTUGAL</span>
+            </div>
+            <div class="line">
+              <span>BUT LIVES IN</span>
+            </div>
+            <div class="line">
+              <span>AUSTRALIA.</span>
+            </div>
           </h2>
         </div>
-
+      </div>
+      <div class="section-intro">
         <div class="hero">
           <div class="hero-text">
-            <h2 class="hero-text-primary">
+            <h2 class="heading">
               AND I HELP BUSINESSES WITH GRAPHIC DESIGN WORK
             </h2>
           </div>
           <div class="hero-image">
             <img
               src="./assets/images/sergio-profile.png"
-              class="hero-image-profile"
+              class="hero-image-profile hero-image-profile-1"
               alt="profile image"
             />
           </div>
         </div>
       </div>
-      <div class="section-hero">
+      <div class="section-intro">
         <div class="hero">
-          <div class="hero-image">
+          <div class="hero-image hero-image--2">
             <img
               src="./assets/images/sergio-status.png"
-              class="hero-image-profile"
+              class="hero-image-profile hero-image-profile-2"
               alt="profile image"
             />
           </div>
@@ -57,8 +81,9 @@
             <ul>
               <li class="hero-text-heading">BRANDING</li>
               <li class="hero-text-heading">STRATEGY</li>
+              <li class="hero-text-heading">ILLUSTRATION</li>
               <li class="hero-text-heading">WEB DESIGN</li>
-              <li class="hero-text-heading">PHOTOGRAPHY</li>
+              <li class="hero-text-heading">MOTION GRAHICS</li>
               <li class="hero-text-heading">PHOTOGRAPHY</li>
             </ul>
           </div>
@@ -81,24 +106,27 @@
         <div class="media">
           <h3 class="secondary-heading">FEATURED BY:</h3>
           <div class="coverage">
-            <h2 class="heading">
-              <a href="#">awwwards </a><a href="#"> behance </a
+            <h2 class="big-text big-text--1">
+              <a href="#">awwwards </a><a href="#"> CNBC </a>
+              <a href="#"> behance </a>
+            </h2>
+            <h2 class="big-text big-text--2">
+              <a href="#">BBC </a><a href="#">webkitchen </a
               ><a href="#"> dribble</a>
             </h2>
-            <h2 class="big-text">
-              <a href="#">webkitchen </a><a href="#"> LINKEDIN </a
-              ><a href="#"> GOOgle</a>
-            </h2>
-            <h2 class="heading">
-              <a href="#">IDEALO </a><a href="#"> cnbc </a
-              ><a href="#"> huffpost</a><a href="#"> sunday morning </a>
+            <h2 class="big-text big-text--3">
+              <a href="#">IDEALO </a><a href="#"> huffpost </a
+              ><a href="#">TECHCrunch </a>
             </h2>
           </div>
         </div>
       </div>
 
       <div class="section-portfolio">
-        <h3 class="secondary-heading">Work:</h3>
+        <h3 class="secondary-heading">
+          <span class="secondary-heading-reveal"></span>
+          <span class="secondary-heading-text">Work:</span>
+        </h3>
 
         <div class="projects">
           <div class="hero-image">
@@ -137,7 +165,7 @@
           </div>
         </div>
         <div class="hero-text">
-          <h2 class="hero-text-heading">HELLO@THEWEBSITEKITCHEN.COM</h2>
+          <h4 class="hero-text-heading">HELLO@THEWEBSITEKITCHEN.COM</h4>
         </div>
       </div>
     </main>
@@ -147,12 +175,39 @@
     <footer class="section-footer">
       <div class="footer">
         <div class="footer-social">
-          <svg></svg>
+          <svg class="footer-social__links">
+            <use
+              xlink:href="./assets/images/icons/sprite.svg#icon-facebook"
+            ></use>
+          </svg>
+
+          <svg class="footer-social__links">
+            <use
+              xlink:href="./assets/images/icons/sprite.svg#icon-instagram"
+            ></use>
+          </svg>
+          <svg class="footer-social__links">
+            <use
+              xlink:href="./assets/images/icons/sprite.svg#icon-twitter"
+            ></use>
+          </svg>
+          <svg class="footer-social__links">
+            <use
+              xlink:href="./assets/images/icons/sprite.svg#icon-youtube"
+            ></use>
+          </svg>
         </div>
         <div class="footer-copy">
           <p>Copyright © 2020 THE WEBSITE KITCHEN. All rights reserved.</p>
         </div>
       </div>
     </footer>
+
+    <!-- Extras-->
+
+    <div class="mouse"><a href="" class="btn btn--play"> Play</a></div>
+
+    <div class="cursor"></div>
+    <audio src="./assets/images/audio.wav" class="intro"></audio>
   </body>
 </html>

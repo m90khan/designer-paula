@@ -1,0 +1,31 @@
+.mouse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.cursor {
+  background: $color-primary;
+  position: absolute;
+  padding: 0.8rem;
+  border-radius: 5rem;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+}
+.header {
+  &__burger {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    &--line1,
+    &--line2 {
+      height: 0.2rem;
+      width: 3rem;
+      background: $color-white;
+      margin: 0.5rem;
+      pointer-events: none;
+    }
+  }
+}

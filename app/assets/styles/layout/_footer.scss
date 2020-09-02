@@ -1,0 +1,63 @@
+.footer {
+  @include flex(column, center, center);
+  &-social {
+    & > * {
+      margin-left: 2rem;
+    }
+    svg {
+      height: 2rem;
+      width: 2rem;
+
+      fill: $color-secondary;
+
+      @include respond(tab-land) {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.media {
+  @include flex(column, space-between, flex-start);
+  & > *:not(:first-child) {
+    padding: 1rem 0;
+  }
+}
+.coverage {
+  @include flex(column, center, space-evenly);
+  height: 70vh;
+  z-index: 100;
+  width: 100%;
+  @include respond(tab-land) {
+    height: 70vh;
+  }
+  .big-text {
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @include respond(phone) {
+      white-space: initial;
+    }
+    a {
+      -webkit-text-fill-color: $color-secondary;
+      -webkit-text-stroke: transparent;
+      font-size: 14rem;
+      font-weight: 900;
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
+    &--1,
+    &--3 {
+      a {
+        font-size: 12rem;
+        @include respond(phone) {
+          font-size: 5rem;
+        }
+        -webkit-text-fill-color: $color-tertiary;
+        -webkit-text-stroke: transparent;
+      }
+    }
+  }
+}

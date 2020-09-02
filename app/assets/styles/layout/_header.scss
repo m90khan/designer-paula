@@ -1,26 +1,85 @@
 .header {
-  font-size: 10rem;
   -webkit-text-stroke: 0.4rem;
   -webkit-text-fill-color: $color-black;
+  @include respond(tab-land) {
+    -webkit-text-stroke: 0.2rem;
+  }
   span {
     -webkit-text-fill-color: $color-primary;
   }
 }
 
 .heading-container {
-  width: 80%;
+  height: 70vh;
+
+  width: 100%;
   margin-right: auto;
+  @include respond(tab-land) {
+    margin-right: 0;
+  }
+  @include respond(tab-port) {
+    height: 40vh;
+  }
+  @include respond(phone) {
+    height: 25vh;
+  }
+}
+.heading {
+  .line {
+    position: relative;
+    height: 10rem;
+    @include respond(phone) {
+      height: 5rem;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: inline;
+    }
+  }
 }
 
 .hero {
   @include flex(row, space-evenly, center);
-  min-height: 100vh;
+  height: 100vh;
+
+  @include respond(tab-land) {
+    height: 50vh;
+  }
+  @include respond(phone) {
+    height: 70vh;
+    flex-wrap: wrap;
+  }
+  // @include respond(tab-port) {
+  //   height: 50vh;
+  // }
   &-image {
-    flex: 0 1 40%;
+    flex: 0 0 40%;
     width: 100%;
     height: 100%;
     padding: 2rem;
     text-align: center;
+    @include respond(phone) {
+      padding: 0rem;
+      flex: 0 0 80%;
+      justify-self: flex-end;
+      position: relative;
+      left: 10%;
+      top: -5%;
+      z-index: -1;
+    }
+
+    &--2 {
+      @include respond(phone) {
+        order: 2;
+        position: relative;
+        left: -20%;
+        top: -5%;
+      }
+    }
     &-profile {
       width: 90%;
       object-fit: cover;
@@ -28,63 +87,57 @@
   }
 
   &-text {
-    flex: 0 1 60%;
-
+    flex: 1 0 65%;
+    @include respond(phone) {
+      flex: 1 0 50%;
+    }
     ul {
       text-align: right;
     }
   }
 }
 .hero-text-heading {
-  font-size: 5rem;
-
   line-height: 0.95;
   font-weight: 600;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.2rem $color-secondary;
+  -webkit-text-stroke: 0.3rem $color-secondary;
+  @include respond(tab-land) {
+    -webkit-text-stroke: 0.25rem $color-secondary;
+  }
+  @include respond(phone) {
+    line-height: 1.25;
+    -webkit-text-stroke: 0.2rem $color-secondary;
+  }
+  &:hover {
+    -webkit-text-fill-color: $color-tertiary;
+  }
 }
 
 .heading,
 .heading a {
-  font-size: 8rem;
+  // font-size: 10rem;
   line-height: 0.95;
   font-weight: 800;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.4rem $color-primary;
-}
-
-.heading a {
   text-transform: uppercase;
-}
 
-.media {
-  @include flex(column, space-between, flex-start);
-  & > * {
-    padding: 1rem 0;
-  }
-}
-.coverage {
-  h2 {
-    white-space: nowrap;
-    transform: skewY(-2deg);
-
-    a {
-      -webkit-text-fill-color: $color-tertiary;
-      -webkit-text-stroke: transparent;
-    }
-  }
-  .big-text a {
-    -webkit-text-fill-color: $color-secondary;
-    -webkit-text-stroke: transparent;
-    font-size: 12rem;
-    font-weight: 900;
-  }
-}
-
-.hero-text-primary {
-  font-size: 7rem;
-  line-height: 0.95;
-  font-weight: 800;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.4rem $color-primary;
+  @include respond(tab-land) {
+    -webkit-text-stroke: 0.25rem $color-primary;
+  }
+  @include respond(phone) {
+    line-height: 1.25;
+    -webkit-text-stroke: 0.2rem $color-primary;
+  }
 }
+
+// .heading a {
+// }
+
+// .hero-text-primary {
+//   font-size: 8rem;
+//   line-height: 0.95;
+//   font-weight: 800;
+//   -webkit-text-fill-color: transparent;
+//   -webkit-text-stroke: 0.4rem $color-primary;
+// }
