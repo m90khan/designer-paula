@@ -1,4 +1,4 @@
-### Sergio De Mallo---Website
+### Sergio De Paula---Website
 
 <br />
 <p align="center">
@@ -6,7 +6,7 @@
     <img src="Sergio-Cover.jpg" alt="Logo" width="120" height="120">
   </a>
 
-  <h3 align="center">Sergio De Mallo---Website  </h3>
+  <h3 align="center">Sergio De Paula---Website  </h3>
 
   <p align="center">
 Designer Portfolio <br />
