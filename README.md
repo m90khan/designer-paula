@@ -30,7 +30,7 @@ Designer Portfolio <br />
 
 ### About the Project
 
-- It is an designer portfolio from design to development.
+- It is a designer portfolio from design to development.
 
 Live: https://m90khan.github.io/designer-paula/
 Layout: Flexbox (BEM Model)
