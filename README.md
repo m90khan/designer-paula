@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://m90khan.github.io/designer-paula/">
-    <img src="./img/favicon.png" alt="Logo" width="120" height="120">
+    <img src="Sergio-Cover.jpg" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Sergio De Mallo---Website  </h3>
@@ -35,8 +35,8 @@ Designer Portfolio <br />
 Live: https://m90khan.github.io/designer-paula/
 Layout: Flexbox (BEM Model)
 Duration: 14 hrs - 2 days split
-
-![ChuckSum Overview GIF](https://m90khan.github.io/designer-paula/blob/master/sergio.gif)
+<img src="Sergio-Cover.jpg">
+<img src="sergio.gif">
 
 #### Process
 
