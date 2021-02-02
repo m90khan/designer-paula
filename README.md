@@ -117,7 +117,7 @@ function playAudio(e) {
 
 [youtube]: https://www.youtube.com/channel/UC96rVfdTKsjZpREnH6CaCOw
 [twitter]: https://twitter.com/m90khan
-[linkedin]: www.linkedin.com/in/uxdkhan
+[linkedin]: https://www.linkedin.com/in/uxdkhan
 [instagram]: https://www.instagram.com/uxd.khan/
 [behance]: https://www.behance.net/Khan_Mohsin
 [dribble]: https://dribbble.com/uxdkhan
