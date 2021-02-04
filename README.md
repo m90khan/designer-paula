@@ -23,8 +23,8 @@ Designer Portfolio <br />
 - [About the Project](#about-the-project)
 - [Process](#process)
 - [Skills](#skills)
-- [Code Snipet](#code)
-- [Contact](#Contact)
+- [Code Snippet](#code)
+- [Connect with me](#Contact)
 
 ---
 
